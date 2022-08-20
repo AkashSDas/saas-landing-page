@@ -1,0 +1,68 @@
+.services-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+  padding: var(--body-pad);
+}
+
+/* IMG */
+.services-info .img {
+  width: 70%;
+  height: 439px;
+  background-image: url("../../assets/cloud-working-illustration.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* INFO */
+
+.services-info .info h3 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.services-info .info .services {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.services-info .info .services .service {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.services-info .service h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.services-info .service p {
+  font-size: 0.75rem;
+  color: #a5a4a4;
+}
+
+.services-info .service:nth-child(1) i {
+  color: #ff4500;
+}
+
+.services-info .service:nth-child(2) i {
+  color: #adff2f;
+}
+
+.services-info .service:nth-child(3) i {
+  color: #00b7ff;
+}
+
+@media screen and (max-width: 900px) {
+  .services-info {
+    flex-direction: column;
+  }
+  .services-info .img {
+    width: 100%;
+  }
+}

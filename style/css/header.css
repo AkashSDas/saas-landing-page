@@ -1,0 +1,108 @@
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: var(--body-pad);
+  background: var(--purple-gradient);
+  color: #fff;
+}
+
+/* NAV */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav .logo {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+nav ul li:not(:last-of-type):hover {
+  color: var(--blue);
+}
+
+nav ul li:last-of-type button {
+  background-color: var(--blue);
+  padding: 1rem 2rem;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Hero */
+
+header .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+header .hero .img {
+  width: 50%;
+  height: 400px;
+  background-image: url("../../assets/cloud-illustration.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .hero .free-trail {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header .hero .free-trail h3 {
+  font-size: 2.9rem;
+}
+
+header .hero .free-trail p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: rgb(206, 206, 206);
+}
+
+header .hero button {
+  background-color: var(--blue);
+  padding: 1rem 2rem;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  width: max-content;
+}
+
+/* Media Query */
+@media screen and (max-width: 900px) {
+  header nav ul {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+  header .hero .free-trail,
+  header .hero .img {
+    width: 100%;
+  }
+  header .hero .img {
+    height: 300px;
+  }
+}
